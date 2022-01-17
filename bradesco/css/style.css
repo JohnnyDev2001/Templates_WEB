@@ -1,0 +1,236 @@
+:root{
+    --main-color: #f36279;
+    --details: #e5173f;
+    --btn: #b41a83;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    outline: none;
+    font-family: BradescoSans, sans-serif;
+    font-weight: 800;
+}
+
+.top-bar{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(270deg, #F56077 0%, #C20757 52%, #B41A83 100%);
+}
+
+.top-bar .holder{
+    width: calc(100% - 120px) !important;
+    margin: 0 auto;
+    position: relative;
+}
+.top-bar form{
+    align-items: center;
+}
+
+.top-bar fieldset{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 5px;
+}
+
+.top-bar fieldset>img{
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 10px;
+}
+
+.top-bar fieldset>span{
+    left: 0;
+    width: 155px;
+    height: 17px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.top-bar fieldset>span::after{
+    content: '';
+    width: 2px;
+    height: 22px;
+    background: rgba(0, 0, 0, 0.26);
+    display: inline;
+    position: absolute;
+    margin-left: 15px;
+}
+
+.top-bar fieldset>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar fieldset ul li{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.top-bar fieldset ul li label{
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.top-bar fieldset ul li .AGN{
+    width: 55px;
+    height: 28px;
+    font-family: inherit;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin-left: 5px;
+}
+
+.top-bar fieldset ul li .CTA{
+    width: 85px;
+    height: 28px;
+    font-family: inherit;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+.top-bar fieldset ul li .DIG{
+    width: 30px;
+    height: 28px;
+    font-family: inherit;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+.top-bar fieldset ul li .btn{
+    text-align: center;
+    align-items: center;
+    width: 30px;
+    height: 26px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    background: var(--btn);
+}
+
+.top-bar fieldset>ul li .lembrar{
+    box-shadow: 1px 1px violet;
+    border-radius: 3px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.top-bar fieldset ul li .ll{
+    margin-right: 30px;
+    position: relative;
+}
+
+.top-bar fieldset ul li .ll::after{
+    content: '';
+    width: 2px;
+    height: 22px;
+    background: rgba(0, 0, 0, 0.26);
+    position: absolute;
+    margin-left: 15px;
+}
+
+.como-usar{
+    position: relative;
+    align-items: center;
+    top: -2px;
+}
+
+.como-usar>span{
+    position: relative;
+    padding: 15px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.como-usar>span img{
+    color: white;
+    width: 8px;
+    height: 7px;
+}
+
+.como-usar>span .submenu{
+	position: absolute;
+    width: 165px;
+    height: 142px;
+    top: 40px;
+    left: -75px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #eb232e;
+    border-bottom: 1px solid #eb232e;
+	display: none;
+}
+
+.como-usar>span .submenuitem{
+	height: 35px;
+    font-size: 9.2px;
+    font-weight: 800;
+    padding: 0 10px;
+    color: #000;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.como-usar>span .submenuitem:hover{
+	text-decoration: underline;
+}
+
+.como-usar>span:hover .submenu{
+	display: block;
+}
+
+.acess{
+    position: absolute;
+    right: 0;
+}
+
+.acess a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+
+.acess a:hover{
+    color: #fff;
+}
+
+.acess a h3{
+    font-size: 11px;
+    padding-right: 5px;
+    text-transform: uppercase;
+}
+
+.acess a img{
+    width: 33px;
+    height: 33px;
+}
+
+.carousel-banner{
+    position: relative;
+    display: block;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+}

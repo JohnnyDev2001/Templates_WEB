@@ -1,0 +1,17 @@
+@font-face {
+    font-family: BradescoSans;
+    src: url('../font/BradescoSans-Regular.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: BradescoSans;
+    src: url('../font/BradescoSans-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: BradescoSans;
+    src: url('../font/BradescoSans-XBold.ttf');
+    font-weight: 900;
+}
