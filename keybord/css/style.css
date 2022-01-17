@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.espaco{
+    background: #000;
+}
+
+.espaco .container{
+    width: 100%;
+    max-width: 1224px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+}
+
+.espaco .teclado{
+    background: #080E2D;
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    height: 130px;
+    border-radius: 5px;
+    box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.486);
+    top: 100px;
+}
+
+.espaco .teclado::before{
+    content: '';
+    background: #0E1849;
+    box-shadow: inset 20px 15px 15px rgba(0, 0, 0, 0.486);
+    position: absolute;
+    width: 290px;
+    right: 5px;
+    top: 5px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.espaco .teclado .tecla{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: #02040E;
+    z-index: 10;
+}
+
+.espaco .teclado .tecla::before{
+    content: "";
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    border-radius: 7px;
+    background: #272A39 ;
+}
+
+.espaco .teclado .tecla:hover
+{
+    background: rgb(27, 0, 0);
+}
+.espaco .teclado .tecla:hover::before
+{
+    content: '';
+    background: rgb(219, 0, 0);
+}
+
+.espaco .teclado .tecla span{
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 6px;
+    top: 6px;
+    z-index: 11;
+}
+
+.espaco .teclado .tecla:nth-child(1){
+    position: absolute;
+    left: 60px;
+    top: 5px;
+}
+.espaco .teclado .tecla:nth-child(2){
+    position: absolute;
+    left: 10px;
+    top: 55px;
+}
+
+.espaco .teclado .tecla:nth-child(3){
+    position: absolute;
+    left: 60px;
+    top: 55px;
+}
+
+.espaco .teclado .tecla:nth-child(4){
+    position: absolute;
+    left: 110px;
+    top: 55px;
+}
+
+.espaco .teclado .view{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #344ece;
+    background: #fff;
+    z-index: 13;
+}
